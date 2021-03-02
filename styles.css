@@ -1,0 +1,180 @@
+body {
+  font-family: 'Montserrat', sans-serif; }
+
+.wrapper {
+  margin: 0 auto;
+  width: 1280px;
+  height: 100vh;
+  position: relative; }
+  .wrapper .bcgr__img {
+    z-index: -99999;
+    width: 100%;
+    height: 100vh; }
+  .wrapper .section {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100vh;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(9px);
+    padding-left: 167px; }
+    .wrapper .section h1 {
+      padding: 139px 173px 15px 0;
+      line-height: 73px;
+      font-size: 60px;
+      color: #DE1919;
+      font-weight: bolder; }
+    .wrapper .section h3 {
+      line-height: 24px;
+      padding-bottom: 30px;
+      font-size: 20px;
+      color: #fff;
+      font-weight: normal; }
+    .wrapper .section .btn {
+      padding-top: 30px; }
+      .wrapper .section .btn .button {
+        text-decoration: none;
+        font-size: 16px;
+        color: #000;
+        font-weight: bold;
+        padding: 25px 84px 25px 86px;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        box-shadow: 0px 6px 24px #00000029;
+        border-radius: 3px; }
+        .wrapper .section .btn .button:hover {
+          background-color: #DE1919;
+          color: #ffd6d6; }
+    .wrapper .section .section__info {
+      padding: 55px 137px 15px 0;
+      line-height: 34px;
+      text-align: left;
+      font-size: 26px;
+      color: #fff;
+      font-weight: bold; }
+    .wrapper .section .section__info--down {
+      padding: 55px 137px 15px 0;
+      line-height: 26px;
+      text-align: right;
+      font-size: 16px;
+      color: #fff;
+      font-weight: normal;
+      font-style: italic; }
+    .wrapper .section .btn__more {
+      padding: 0px 375.5px 0 0;
+      display: flex;
+      justify-content: space-between; }
+      .wrapper .section .btn__more .button__more {
+        padding-right: 15.5px;
+        text-align: right;
+        text-decoration: none;
+        font-size: 16px;
+        color: #fff;
+        font-weight: bold; }
+      .wrapper .section .btn__more:hover {
+        padding: 0px 365.5px 0 0;
+        transition: all 0.3s; }
+
+@media screen and (max-width: 1200px) {
+  .wrapper {
+    width: 1000px; }
+    .wrapper .section {
+      padding-left: 100px; }
+      .wrapper .section h1 {
+        padding: 100px 0 15px 0;
+        line-height: 65px;
+        font-size: 55px;
+        color: #DE1919;
+        font-weight: bolder; }
+      .wrapper .section h3 {
+        line-height: 20px;
+        font-size: 16px;
+        color: #fff;
+        font-weight: normal; }
+      .wrapper .section .btn {
+        padding-top: 20px; }
+        .wrapper .section .btn .button {
+          font-size: 14px;
+          color: #000;
+          font-weight: bold;
+          padding: 20px 70px 20px 70px; }
+      .wrapper .section .section__info {
+        padding: 55px 60px 15px 0;
+        line-height: 27px;
+        font-size: 20px;
+        color: #fff;
+        font-weight: bold; }
+      .wrapper .section .section__info--down {
+        padding: 55px 60px 150px 0;
+        line-height: 20px;
+        font-size: 14px;
+        color: #fff;
+        font-weight: normal; }
+      .wrapper .section .btn__more {
+        padding: 0px 300px 0 0; }
+        .wrapper .section .btn__more .button__more {
+          padding-right: 10px;
+          font-size: 14px;
+          color: #fff;
+          font-weight: bold; }
+        .wrapper .section .btn__more:hover {
+          padding: 0px 330px 0 0; } }
+@media screen and (max-width: 960px) {
+  .wrapper {
+    width: 100%; }
+    .wrapper .section {
+      padding: 60px 60px 60px 120px;
+      width: 100%; }
+      .wrapper .section h1 {
+        line-height: 50px;
+        font-size: 45px;
+        color: #DE1919;
+        font-weight: bolder; }
+      .wrapper .section h3 {
+        line-height: 18px;
+        font-size: 14px;
+        color: #fff;
+        font-weight: normal; }
+      .wrapper .section .btn {
+        padding-top: 10px; }
+        .wrapper .section .btn .button {
+          font-size: 12px;
+          color: #000;
+          font-weight: bold;
+          padding: 15px 60px 15px 60px; }
+      .wrapper .section .section__info {
+        padding: 55px 30px 15px 0;
+        line-height: 23px;
+        font-size: 16px;
+        color: #fff;
+        font-weight: bold; }
+      .wrapper .section .section__info--down {
+        padding: 55px 30px 100px 0;
+        line-height: 18px;
+        font-size: 12px;
+        color: #fff;
+        font-weight: normal; }
+      .wrapper .section .btn__more {
+        padding: 0px 0 0 0;
+        width: 100px; }
+        .wrapper .section .btn__more .button__more {
+          padding-right: 10px;
+          font-size: 14px;
+          color: #fff;
+          font-weight: bold; }
+        .wrapper .section .btn__more:hover {
+          padding: 0px 0 0 0; } }
+@media screen and (max-width: 420px) {
+  .wrapper {
+    width: 100%; }
+    .wrapper .section {
+      padding: 60px;
+      width: 100%; } }
+@media screen and (max-width: 360px) {
+  .wrapper {
+    width: 100%; }
+    .wrapper .section {
+      padding: 30px;
+      width: 100%; } }
+
+/*# sourceMappingURL=styles.css.map */

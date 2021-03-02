@@ -1,0 +1,237 @@
+$AccentColor: #DE1919;
+$H1FontSize: 60px;
+$BtnHoverTextColor: #ffd6d6;
+$BtnDefaultTextColor: #242121;
+
+@mixin textSettings($FontSize, $FontColor, $FontWeight) {
+    font-size: $FontSize;
+    color: $FontColor;
+    font-weight: $FontWeight;
+}
+
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+    // background: $BtnHoverTextColor url('img/bckg.png');
+    margin: 0 auto;
+    width: 1280px;
+    height: 100vh;
+    position: relative;
+
+    .bcgr__img {
+        z-index: -99999;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .section {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100vh;
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(9px);
+        padding-left: 167px;
+
+        h1 {
+            padding: 139px 173px 15px 0;
+            line-height: 73px;
+            @include textSettings($H1FontSize, $AccentColor, bolder)
+        }
+
+        h3 {
+            line-height: 24px;
+            padding-bottom: 30px;
+            @include textSettings(20px, #fff, normal)
+        }
+
+        .btn {
+            padding-top: 30px;
+
+            .button {
+                text-decoration: none;
+                @include textSettings(16px, #000, bold);
+                padding: 25px 84px 25px 86px;
+                background: #FFFFFF 0% 0% no-repeat padding-box;
+                box-shadow: 0px 6px 24px #00000029;
+                border-radius: 3px;
+
+                &:hover {
+                    background-color: $AccentColor;
+                    color: $BtnHoverTextColor;
+                }
+            }
+        }
+
+        .section__info {
+            padding: 55px 137px 15px 0;
+            line-height: 34px;
+            text-align: left;
+            @include textSettings(26px, #fff, bold);
+        }
+
+        .section__info--down {
+            padding: 55px 137px 15px 0;
+            line-height: 26px;
+            text-align: right;
+            @include textSettings(16px, #fff, normal);
+            font-style: italic;
+        }
+
+        .btn__more {
+            padding: 0px 375.5px 0 0;
+            display: flex;
+            justify-content: space-between;
+
+            .button__more {
+                padding-right: 15.5px;
+                text-align: right;
+                text-decoration: none;
+                @include textSettings(16px, #fff, bold);
+            }
+
+            &:hover {
+                padding: 0px 365.5px 0 0;
+                transition: all 0.3s;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .wrapper {
+        width: 1000px;
+
+        .section {
+            padding-left: 100px;
+
+            h1 {
+                padding: 100px 0 15px 0;
+                line-height: 65px;
+                @include textSettings(55px, $AccentColor, bolder)
+            }
+
+            h3 {
+                line-height: 20px;
+                @include textSettings(16px, #fff, normal)
+            }
+
+            .btn {
+                padding-top: 20px;
+
+                .button {
+                    @include textSettings(14px, #000, bold);
+                    padding: 20px 70px 20px 70px;
+                }
+            }
+
+            .section__info {
+                padding: 55px 60px 15px 0;
+                line-height: 27px;
+                @include textSettings(20px, #fff, bold);
+            }
+
+            .section__info--down {
+                padding: 55px 60px 150px 0;
+                line-height: 20px;
+                @include textSettings(14px, #fff, normal);
+            }
+
+            .btn__more {
+                padding: 0px 300px 0 0;
+
+                .button__more {
+                    padding-right: 10px;
+                    @include textSettings(14px, #fff, bold);
+                }
+
+                &:hover {
+                    padding: 0px 330px 0 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:960px) {
+    .wrapper {
+        width: 100%;
+
+        .section {
+            padding: 60px 60px 60px 120px;
+            width: 100%;
+
+            h1 {
+                line-height: 50px;
+                @include textSettings(45px, $AccentColor, bolder)
+            }
+
+            h3 {
+                line-height: 18px;
+                @include textSettings(14px, #fff, normal)
+            }
+
+            .btn {
+                padding-top: 10px;
+
+                .button {
+                    @include textSettings(12px, #000, bold);
+                    padding: 15px 60px 15px 60px;
+                }
+            }
+
+            .section__info {
+                padding: 55px 30px 15px 0;
+                line-height: 23px;
+                @include textSettings(16px, #fff, bold);
+            }
+
+            .section__info--down {
+                padding: 55px 30px 100px 0;
+                line-height: 18px;
+                @include textSettings(12px, #fff, normal);
+            }
+
+            .btn__more {
+                padding: 0px 0 0 0;
+                width: 100px;
+
+                .button__more {
+                    padding-right: 10px;
+                    @include textSettings(14px, #fff, bold);
+                }
+
+                &:hover {
+                    padding: 0px 0 0 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:420px) {
+    .wrapper {
+        width: 100%;
+
+        .section {
+            padding: 60px;
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width:360px) {
+    .wrapper {
+        width: 100%;
+
+        .section {
+            padding: 30px;
+            width: 100%;
+        }
+    }
+}
